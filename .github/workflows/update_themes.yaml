@@ -33,7 +33,7 @@ jobs:
           go install github.com/cbroglie/mustache/cmd/mustache@latest
           rm output/*
           for i in $(\ls generated_templates/);  do
-            mustache generated_templates/${i} templates/default.mustache >> "output/$(echo $i | sed 's/\.json//g').user.css"
+            mustache generated_templates/${i} templates/default.mustache >> "output/$(echo $i | sed 's/\.json//g').yml"
           done
       - name: Push Changes
         env:
@@ -45,6 +45,6 @@ jobs:
           git config user.email "actions@github"
           git config user.name "Github Actions"
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-          git add user_css/
+          git add .
           # Only commit and push if we have changes
           git diff --quiet && git diff --staged --quiet || (git commit -m "${COMMIT_MSG}"; git push origin HEAD:${GITHUB_REF})
