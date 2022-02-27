@@ -19,6 +19,7 @@ for i = 1, #t do
   cp.gitsigns = cp.gitsigns or cp.diff
   cp.magenta = cp.magenta or cp.syntax.keyword
   cp.cyan = cp.cyan or cp.accent
+  cp.blue = cp.blue or cp.accent
   local json_cp = require("json").encode(cp)
   local file = io.open(string.format("generated_templates/%s.json", t[i]), "w")
   file:write(json_cp)
