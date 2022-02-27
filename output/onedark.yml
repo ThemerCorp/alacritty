@@ -1,0 +1,27 @@
+colors:
+  name:   
+  author: Themer GH Bot
+  primary:
+    background: "#1e222a"
+    foreground: "#abb2bf"
+  cursor:
+    text: "#1e222a"
+    cursor: "#abb2bf"
+  normal:
+    black: "#1b1f27"
+    red: "#d47d85"
+    green: "#A3BE8C"
+    yellow: "#e7c787"
+    blue: "#56b6c2"
+    magenta: "#c882e7"
+    cyan: "#519ABA"
+    white: "#abb2bf"
+  bright:
+    black: "#1b1f27"
+    red: "#d47d85"
+    green: "#A3BE8C"
+    yellow: "#e7c787"
+    blue: "#56b6c2"
+    magenta: "#c882e7"
+    cyan: "#519ABA"
+    white: "#abb2bf"
