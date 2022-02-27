@@ -16,6 +16,9 @@ for i = 1, #t do
   t[i] = t[i]:gsub(".lua", "")
   local cp = require(string.format("themes/%s", t[i]))
   cp["scheme-name"] = t[i]
+  cp.gitsigns = cp.gitsigns or cp.diff
+  cp.magenta = cp.magenta or cp.syntax.keyword
+  cp.cyan = cp.cyan or cp.accent
   local json_cp = require("json").encode(cp)
   local file = io.open(string.format("generated_templates/%s.json", t[i]), "w")
   file:write(json_cp)
