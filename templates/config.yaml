@@ -1,0 +1,3 @@
+default:
+    extension: .example
+    output: output
