@@ -9,8 +9,8 @@ colors:
     cursor: "#dedbeb"
   normal:
     black: "#2c223c"
-    red: "#ed3f7f"
-    green: "#84c49b"
+    red: "#e83f80"
+    green: "#adcfbc"
     yellow: "#f79f79"
     blue: "#bdceed"
     magenta: "#9985d1"
@@ -18,8 +18,8 @@ colors:
     white: "#dedbeb"
   bright:
     black: "#2c223c"
-    red: "#ed3f7f"
-    green: "#84c49b"
+    red: "#e83f80"
+    green: "#adcfbc"
     yellow: "#f79f79"
     blue: "#bdceed"
     magenta: "#9985d1"
